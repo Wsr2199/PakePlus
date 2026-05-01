@@ -54,7 +54,7 @@
                 align-items: center;
             }
 
-            .card {
+            .flat {
                 width: 90%;
                 max-width: 380px;
                 padding: 30px 24px;
@@ -180,7 +180,7 @@
     </head>
     <body class="dark">
         <!-- 激活卡片 -->
-        <div class="card" id="card">
+        <div class="flat" id="cardBox">
             <div class="title" id="title">请输入密码</div>
             <input id="code" class="input" placeholder="请输入密码" />
             <button class="button" onclick="check()">
@@ -208,7 +208,7 @@
                 } else {
                     document.body.classList.add('pwdTheme')
                 }
-                document.getElementById('card').classList.add('pwdStyle')
+                document.getElementById('cardBox').classList.add('pwdStyle')
                 // 设置标题
                 document.getElementById('title').textContent = 'pwdTitle'
                 document.getElementById('code').placeholder = 'pwdPlace'
@@ -252,8 +252,8 @@
                         // 密码错误，恢复按钮
                         btn.disabled = false
                         error.style.opacity = 1
+                        loading.classList.remove('loading-spinner')
                     }
-                    loading.classList.remove('loading-spinner')
                 }, 300)
             }
             document.body.style.display = 'flex'
