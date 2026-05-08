@@ -30,7 +30,9 @@
                 "https://hk.gh-proxy.org/http://github.com/Sjj1024/PakePlus/releases/latest/download/ppupdate.json",
                 "https://cdn.gh-proxy.org/http://github.com/Sjj1024/PakePlus/releases/latest/download/ppupdate.json",
                 "https://edgeone.gh-proxy.org/http://github.com/Sjj1024/PakePlus/releases/latest/download/ppupdate.json",
-                "https://pbrivate.netlify.app/pakeplus/ppupdate.json"
+                "https://pakeplus.top/api/public/pakeplus/update",
+                "https://server.pakeplus.com/public/ppupdate",
+                "https://ppofficial.netlify.app/ppupdate.json"
             ],
             "windows": {
                 "installMode": "passive"
